@@ -17,5 +17,3 @@ config :int_300, Int300.Repo,
   database: "int_300_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
-
-config :hound, driver: "chrome_driver"

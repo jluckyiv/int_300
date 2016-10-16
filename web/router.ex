@@ -17,6 +17,8 @@ defmodule Int300.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/template/inline", TemplateInlineController, only: [:show]
+    resources "/template/attachment", TemplateAttachmentController, only: [:show]
   end
 
   # Other scopes may use custom stacks.
